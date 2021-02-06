@@ -5,19 +5,55 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Web page example">
   <title>USABILITY</title>
+  <style>
+      body {
+          background-color: whitesmoke;
+          }
+    form{
+        background-color: #fff;
+        padding: 20px;
+    }
+    .redone{
+        color: red;
+    }
+    #blueone{
+        color: blue;
+    }
+    button#blueone {
+        color: darkslateblue;
+    }
+    *{
+        color: yellowgreen;
+    }
+    label,p{
+        color: purple;
+    }
+    form p{
+        color:sandybrown;
+    }
+    form.redone{
+        color: darkred;
+    }
+    form label.redone{
+        color: lightcoral;
+    }
+    p{
+        color: gray;
+    }
+  </style>
 </head>
-<body style="background-color: darkblue;">
+<body">
 
-    <form style="background-color: white;padding: 20px;" action="#">
+    <form action="#">
         <label for="name">Firstname</label>
         <input type="text" id="fname" name="fname" required><br><br>
         <label for="lastname">Lastname</label>
         <input type="text" id="lname" name="lname"><br><br>
         <label for="email">email</label>
         <input type="email" id="lname" name="email" required><br><br>
-        <label for="password">password</label>
+        <label class="redone" for="password">password</label>
         <input type="password" id="password" name="password" required><br><br>
-        <label for="password">confirm password</label>
+        <label id="blueone" for="password">confirm password</label>
         <input type="password" id="cpassword" name="cpassword" required><br><br>
         <p>Please select your gender:</p>
         <input type="radio" id="male" name="gender" value="male" required>
@@ -36,7 +72,11 @@
         <label for="book4">book4</label><br><br>
         <input type="checkbox" id="book5" name="book5" value="book5">
         <label for="book5">book5</label><br><br>
-        <button>submit</button>
-    </form> 
+        <button id="blueone">submit</button>
+    </form> <br><br>
+    <p class="redone">Please select your favorite books:</p>
+    <p>Please select your favorite books:</p>
+    <p class="redone" id="blueone">Please select your favorite books:</p>
+
 
 </body>
