@@ -13,7 +13,7 @@
         background-color: #fff;
         padding: 20px;
     }
-    .redone{
+    /* .redone{
         color: red;
     }
     #blueone{
@@ -40,9 +40,66 @@
     p{
         color: gray;
     }
+
+    form > label {
+        color: green;
+    } */
+
+    /* input[type=checkbox] + label {
+        border: 1px solid red;
+        color: red;
+    } */
+
+    /* input[type=checkbox] ~ label {
+        border: 1px solid red;
+        color: red;
+    } */
+    div {
+        background-color: blueviolet;
+    }
+
+    #alex-theme a {
+        display: block;
+        background-color: cadetblue;
+    }
+
+    #hector-theme div {
+        background-color: blue;
+    }
+
+    a {
+        display: block;
+        background-color: green;
+    }
+
+    a[href^="https"] {
+        color: yellow;
+        background-color: blue;
+    }
+
+    a[href$="/"] {
+        color: red;
+        background-color: purple;
+    }
+
+    a[href$=".pdf"] {
+        color: red;
+        background-color: purple;
+    }
+
+    a[href*="www"] {
+        color: burlywood;
+        background-color: brown;
+    }
+
+    form div img {
+        width: 10px;
+        height: 10px;
+    }
+    /* const a = /^[ab]+$/ */
   </style>
 </head>
-<body">
+<body>
 
     <form action="#">
         <label for="name">Firstname</label>
@@ -69,8 +126,10 @@
         <input type="checkbox" id="book3" name="book3" value="book3">
         <label for="book3">book3</label><br><br>
         <input type="checkbox" id="book4" name="book4" value="book4">
+        <span>hehehe</span>
         <label for="book4">book4</label><br><br>
         <input type="checkbox" id="book5" name="book5" value="book5">
+        <span>hehehe</span>
         <label for="book5">book5</label><br><br>
         <button id="blueone">submit</button>
     </form> <br><br>
@@ -78,5 +137,17 @@
     <p>Please select your favorite books:</p>
     <p class="redone" id="blueone">Please select your favorite books:</p>
 
+    <form id="game" action="">
+        <label for="">Label</label>
+        <p>paragraph</p>
+        <div>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Red_Circle%28small%29.svg/1200px-Red_Circle%28small%29.svg.png" alt="">
+            <label for="">Links</label>
+            <a href="xhttps://www.freecodecamp.org/learn/responsive-web-design/">Responsive Web Course</a>
+            <a href="https://stackoverflow.com/questions/49603939/message-async-callback-was-not-invoked-within-the-5000-ms-timeout-specified-by">Stackoverflow</a>
+            <a href="https://playwright.dev/docs/intro/">Playwright docs</a>
+            <a href="localhost:8000/es/">Localhost</a>
+        </div>
+    </form>
 
 </body>
